@@ -1,0 +1,47 @@
+buildscript {
+  repositories {
+    // 阿里云 maven 地址
+    // central
+    maven { url 'https://maven.aliyun.com/repository/central' }
+    // jcenter
+    maven { url 'https://maven.aliyun.com/repository/jcenter' }
+    // google
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    // gradle-plugin
+    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+   
+    //
+    mavenCentral()
+  }
+}
+
+plugins {
+  id 'java'
+}
+
+group 'org.paradisehell'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+  // 阿里云 maven 地址
+  // central
+  maven { url 'https://maven.aliyun.com/repository/central' }
+  // jcenter
+  maven { url 'https://maven.aliyun.com/repository/jcenter' }
+  // google
+  maven { url 'https://maven.aliyun.com/repository/google' }
+  // gradle-plugin
+  maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+  
+  //
+  mavenCentral()
+}
+
+// 依赖
+dependencies {
+  // HTML 解析库
+  implementation 'org.jsoup:jsoup:1.11.3'
+}
+
